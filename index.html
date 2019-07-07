@@ -1,16 +1,73 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<title>相互对立 相互转化</title>
+	<meta charset="utf-8">
+	<title>C语言讲题1</title>
+	<style>
+		div {
+			background-color: lightgrey;
+			width: 1000px;
+			border: 1px solid black;
+			padding: 50px;
+			margin: 0 auto;
+		}
+	</style>
 </head>
+
 <body>
-    <h1>大学语文——相互对立 相互转化 </h1>
-    <p>《庄子》里还有一个故事：</p>
-		<p>有棵树很大，但软得很，木质不行，想做什么都做不成。有个木匠就感叹道：“这样的树，长着有啥意义？”
-			树觉得很不服气，它说：“我如果有用的话，早就被人砍了，咋能活这么大岁数？我的无用，正是我的大用！”所以，是长是短，真不好说。在道家眼里，长的可能是短的，短的也可能是长的。</p>
-		<p>可见，长处与短处是相互转化的，正是因为木质软，什么都做不了，才没有遭受被人砍伐的下场；长处与短处相互对立，但又相互转化。</p>
-		<p>老子的目的，就是让你观察大自然有有无无的现象，观察缘起性空，观察各种现象的不断变化，然后破除执著，扫除分别心，进入圣人之境。</p>
-		<img src="tree.png" alt="Tree" width="500" height="800">
+
+	<h1 align='center'>C语言讲题1</h1>
+
+	<div>
+		<p>
+			1.有n个人围成一个圈，从1号开始按顺序报数报到k(k小于n)，凡是报到偶数的人退出圈子，问最后留下来的是几号？
+		</p>
+		<p>
+			样例:<br />
+			输入：n=11<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;k=5<br />
+			输出：6
+		</p>
+		<p>
+			2.输入n个正整数，规定n从1到10000，要求输出最长的连续自然数组的长度（规定为从小到大的连续自然数组）。<br />
+			输入：第一行，一个数n；第二行，n个正整数，之间用空格隔开。<br />
+			输出：一个数，最长的连续自然数组的长度。<br />
+		</p>
+		<p>
+			样例：<br />
+			输入：10<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3 5 6 2 3 4 5 6 8 9<br />
+			输出：5
+		</p>
+		<p>
+			3.给定m行n列的一个矩阵，对其依次进行一系列操作后，求最终矩阵。（数组变换）
+			其中，可能的操作及对应的字符包括如下四种：
+		</p>
+		<p>
+			1. 顺时针旋转90度<br />
+			2. 逆时针旋转90度<br />
+			3. 左右翻转<br />
+			4. 上下翻转
+		</p>
+		<p>
+			输入：第一行包含两个正整数m和n，表示矩阵的行数和列数，m、n限定为1到100的自然数，中间用单个空格隔开。<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;接下来为m行，每行n个整数，表示矩阵中的元素，相邻元素用空格隔开。<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;最后一行为指令，包含由1、2、、3、4组成的字符串s，表示需要按顺序执行的操作序列。S的长度限定在1到100之间。<br />
+			输出：经过变换后的矩阵，相邻元素用空格隔开。
+		</p>
+		<p>
+			样例：<br />
+			输入：2 3<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10 0 10<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100 100 10<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;13<br />
+			输出：10 100<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0 100<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10 10
+		</p>
+	</div>
+
 </body>
+
 </html>
